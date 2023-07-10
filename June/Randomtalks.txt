@@ -1,0 +1,11 @@
+how to identify a class.
+Capital letter (2 capital ->object)
+Object gula class
+class(common) inherit class
+user -> id,name,portfoliolink
+id change()
+portfolio() 
+inheritance 
+//abstract class ,interface 
+Accountant extend user ->
+Admin extend user->

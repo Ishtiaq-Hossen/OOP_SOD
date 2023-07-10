@@ -1,0 +1,67 @@
+public class Employee
+{
+    public:
+        int id;
+        float salaries;
+        String name,deptName,dept;
+        boolean gender;
+        Employee(int id,float salaries,String name,String deptName,String dept,boolean gender)
+        {
+            this.id=id;
+            ..
+            ..
+            
+        }
+        toString()
+        {
+            
+        }
+        
+}
+
+public class controller
+{
+    boolean temp;
+    String temp2,temp3;
+    @FXML
+    private void initialize() {
+        deptName.getItems().addAll("Accountant","2","3","4","");
+        desigNation.getItems().addAll("Accountant","2","3","4","");
+        ToggleGroup group = new ToggleGroup();
+        radioButton.setToggleGroup(group);
+        radioButton2.setToggleGroup(group);
+    }
+   
+    
+    ArrayList<Employee>empArrayList=new ArrayList();
+    
+    buttonOnClick
+    {
+        if(radiobutton.isSelected())
+        {
+            temp=true;
+        }
+        else if(radiobutton2.isSelected()){
+            temp=false;
+        }
+        temp2=deptName.getValue().toString();
+        temp3=desigNation.getValue().toString();
+        empArralist.add(
+            Integer.parseInt(idfxid.getText()),
+            double.parseFloat((salaies.getText())), nameid.getText(),temp2,temp3,temp
+        )
+        
+        
+        String textfiled;
+        for(int i = 0; i < empArralist.size(); i++) {   
+             textField+= empArralist.get(i).toString();
+        }
+        textFiledfxId.setText(texField);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}
