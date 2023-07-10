@@ -36,7 +36,29 @@ ArrayList Initialization & iteration
     
   }
 ```
+## Scene switching code
 
+```
+
+Parent scene2Parent = FXMLLoader.load(getClass().getResource("Scene1.fxml"));//here switching scene fxml should be attached
+Scene scene2 = new Scene(scene2Parent);
+Stage stg2 = (Stage)((Node)event.getSource()).getScene().getWindow();  
+stg2.setScene(scene2);
+stg2.show();
+
+```
+
+## Stage switching Code
+```
+
+Parent fileChooserViewParent = FXMLLoader.load(getClass().getResource("window1.fxml"));//here switching stage fxml should be attached
+Scene fileChooserViewScene = new Scene(fileChooserViewParent);
+Stage newWindow  = new Stage();
+newWindow.setTitle("File Chooser Test Stage");
+newWindow.setScene(fileChooserViewScene);
+newWindow.show();
+
+```
 
 ## Authors
 
