@@ -37,7 +37,8 @@ ArrayList Initialization & iteration
 ```
 
 </details>
-## Scene switching code
+
+<details><summary><b>Scene switching code</b></summary>
 
 ```
 
@@ -48,8 +49,11 @@ stg2.setScene(scene2);
 stg2.show();
 
 ```
+</details>
 
-## Stage switching Code
+
+<details><summary><b>Stage switching code</b></summary>
+
 ```
 
 Parent fileChooserViewParent = FXMLLoader.load(getClass().getResource("window1.fxml"));//here switching stage fxml should be attached
@@ -60,6 +64,7 @@ newWindow.setScene(fileChooserViewScene);
 newWindow.show();
 
 ```
+</details>
 
 ## Authors
 
