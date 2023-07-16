@@ -13,8 +13,7 @@ __Some important url that can help student__
  - [Some OOP Concept with C++](https://github.com/Ishtiaq-Hossen/University-Courses/tree/main/OOP/OOP%20with%20cPlusPlus)
 
 
-
-## Basic ArrayList Code
+<details><summary><b>Basic ArrayList Code</b></summary>
 
 ArrayList Initialization & iteration
 
@@ -36,6 +35,8 @@ ArrayList Initialization & iteration
     
   }
 ```
+
+</details>
 ## Scene switching code
 
 ```
