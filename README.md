@@ -152,7 +152,8 @@ private void createFileBtnOnClick(ActionEvent event) {
                 //SHOW e.toString() IN AN ALERT
             }
         }
-    }
+        studArr.clear();
+}
 
 
     //=====Reading from text file code starts from here====/
