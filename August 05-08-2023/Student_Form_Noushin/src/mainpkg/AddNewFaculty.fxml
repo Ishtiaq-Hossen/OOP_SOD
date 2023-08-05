@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <DatePicker layoutX="32.0" layoutY="202.0" />
+      <ComboBox layoutX="328.0" layoutY="36.0" prefHeight="31.0" prefWidth="218.0" promptText="Select Designation" />
+      <ComboBox layoutX="328.0" layoutY="98.0" prefHeight="31.0" prefWidth="218.0" promptText="Select Depertment" />
+      <DatePicker layoutX="328.0" layoutY="202.0" />
+      <Button layoutX="175.0" layoutY="345.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="271.0" text="Add New Faculty" />
+      <Label layoutX="32.0" layoutY="167.0" text="Select Date of Birth">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="169.0" text="Select Date of Joining">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
