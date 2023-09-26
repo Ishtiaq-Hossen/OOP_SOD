@@ -1,0 +1,6 @@
+anchorpaneFxid.setStyle("-fx-background-color: #ff5733");
+
+red: #ff5733
+yellow: #eff51b
+blue: #1b77f5
+
