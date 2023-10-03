@@ -1,0 +1,7 @@
+
+type: 
+((Object)a32).getClass().getSimpleName()
+
+
+
+Write a Java program to find duplicate values in an array of string values.
