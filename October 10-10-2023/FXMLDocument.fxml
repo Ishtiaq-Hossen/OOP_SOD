@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="735.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FXMLDocumentController">
+   <children>
+      <TextField layoutX="91.0" layoutY="287.0" promptText="Enter Name" />
+      <TextField layoutX="91.0" layoutY="347.0" promptText="Enter Phone No" />
+      <ComboBox fx:id="productListComboBox" layoutX="305.0" layoutY="287.0" prefHeight="31.0" prefWidth="166.0" promptText="Select Product" />
+      <TextArea layoutX="477.0" layoutY="285.0" prefHeight="187.0" prefWidth="166.0" promptText="Product PriceList" />
+      <TextField layoutX="91.0" layoutY="73.0" promptText="Change Product Price" />
+      <ComboBox fx:id="productList2ComboBox" layoutX="289.0" layoutY="73.0" prefWidth="150.0" />
+      <TextField fx:id="addProductsTextField" layoutX="91.0" layoutY="130.0" promptText="Add Products" />
+      <Button layoutX="289.0" layoutY="129.0" mnemonicParsing="false" onAction="#addProductsButton" prefHeight="31.0" prefWidth="150.0" text="Add" />
+      <TextArea layoutX="84.0" layoutY="481.0" prefHeight="200.0" prefWidth="557.0" />
+      <Button layoutX="91.0" layoutY="391.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="86.0" text="Print Bill" />
+      <ComboBox layoutX="91.0" layoutY="187.0" prefHeight="31.0" prefWidth="187.0" promptText="Delete Product" />
+      <Button layoutX="289.0" layoutY="187.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="150.0" text="Delete" />
+      <Text layoutX="291.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Panel" textAlignment="CENTER" wrappingWidth="165.99999970197678">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="281.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Panel" textAlignment="CENTER" wrappingWidth="165.99999970197678">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="305.0" layoutY="347.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="166.0" text="Add" />
+      <TextField fx:id="productPrice" layoutX="467.0" layoutY="130.0" promptText="Price" />
+   </children>
+</AnchorPane>
