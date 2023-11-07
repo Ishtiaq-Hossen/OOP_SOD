@@ -5,3 +5,25 @@ type:
 
 
 Write a Java program to find duplicate values in an array of string values.
+
+
+git=>version controll system =>invented by linus todlers 
+founder of linux 
+
+localmachine(git)=>change=>push to online -github(cloud)
+github(clone)/pull =>to the local machine
+
+
+person 1=>change => github push
+person 2=>update the folder => change =>github push 
+person 3=>
+
+#commit id=> you can access any version of your project 
+
+
+
+
+
+
+
+
