@@ -1,0 +1,16 @@
+File handling => why to use it ?
+
+
+for saving data more appropiately .
+normal filed=> afte solftware close => data is gone 
+file handling .
+=> text file => .txt =>string 
+=> binary file => .bin => according to the data type int(4 byte) => (+) point ,its more secure 
+=> sequencially store 
+int 
+character 
+After searching
+=>int 
+=>character 
+=> Object binary file => .bin => (+) point ,its more secure 
+=> class instance are stored here 

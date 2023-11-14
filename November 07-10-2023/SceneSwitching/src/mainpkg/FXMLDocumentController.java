@@ -44,30 +44,38 @@ public class FXMLDocumentController implements Initializable {
     }    
 
     @FXML
-    private void sceneSwitchingOnCLick(ActionEvent event) throws IOException {
-        
-        String a=selectUserFxId.getValue().toString();
+    private void sceneSwitchingOnCLick(ActionEvent event) {
         
         
-        if(a=="Student"){
-            Parent sceneA=FXMLLoader.load(getClass().getResource("studentFXML.fxml"));
-            Scene sceneB=new Scene(sceneA);
-            Stage stg=(Stage)((Node)event.getSource()).getScene().getWindow();
-            stg.setTitle("Student Scene");
-            stg.setScene(sceneB);
-            stg.show();
+        try{
+            String a=selectUserFxId.getValue().toString();
+            if(selectUserFxId.getValue().toString().equals("Student")){
+                Parent sceneA=FXMLLoader.load(getClass().getResource("studentFXML.fxml"));
+                Scene sceneB=new Scene(sceneA);
+                Stage stg=(Stage)((Node)event.getSource()).getScene().getWindow();
+                stg.setTitle("Student Scene");
+                stg.setScene(sceneB);
+                stg.show();
+            }
+            else if(selectUserFxId.getValue().toString().equals("Faculty")){
+                Parent sceneA=FXMLLoader.load(getClass().getResource("facultyFXML.fxml"));
+                Scene sceneB=new Scene(sceneA);
+                Stage stg=(Stage)((Node)event.getSource()).getScene().getWindow();
+                stg.setTitle("Faculty Scene");
+                stg.setScene(sceneB);
+                stg.show();
+            }
         }
-        else if(a=="Faculty"){
-            Parent sceneA=FXMLLoader.load(getClass().getResource("facultyFXML.fxml"));
-            Scene sceneB=new Scene(sceneA);
-            Stage stg=(Stage)((Node)event.getSource()).getScene().getWindow();
-            stg.setTitle("Faculty Scene");
-            stg.setScene(sceneB);
-            stg.show();
+        catch(Exception ar){
+            //System.out.println(ar.toString());
+            final Node source = (Node) event.getSource();
+            final Stage stage = (Stage) source.getScene().getWindow();
+            stage.close();
+            
+            //alert => wrong password //error exception 
+            
         }
-        else if(a==""){
-
-        }
+        
         
 
     }
