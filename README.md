@@ -13,11 +13,124 @@ __Some important url that can help student__
  - [Some OOP Concept with C++](https://github.com/Ishtiaq-Hossen/University-Courses/tree/main/OOP/OOP%20with%20cPlusPlus)
 
 
+<details><summary><b>Variable in java</b></summary>
+
+Java all data type with initialization
+
+```java
+       
+    boolean b;
+    char c;
+    short s;
+    int i;
+    float f;
+    double d;
+    b=true;
+        
+    i=10;
+    c='a';
+    b=true;
+    f=10.2f;
+    d=10.256;
+    System.out.println("i = "+i);
+    System.out.println("c = "+c);
+    System.out.println("b = "+b);
+    System.out.println("f = "+f);
+    System.out.println("d = "+d+f );
+    System.out.println("==============");
+        
+    System.out.printf("i = %d\n",i);
+    System.out.printf("c = %c\n",c);
+    System.out.printf("b = %b\n",b);
+    System.out.printf("f = %.1f\n",f);
+    System.out.printf("d = %.2f\n",d );
+
+```
+
+</details>
+
+<details><summary><b>User Input</b></summary>
+
+### Charater Input
+
+```java
+       
+package beginnerjava;
+import java.util.Scanner;
+
+public class inputDemo {
+    public static void main(String[] args) {
+    Scanner input=new Scanner(System.in);
+        char ch;
+        ch=input.next().charAt(0);
+        
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')System.out.print("Vowel\n");
+        else System.out.print("Consonant\n");
+        
+        
+        // By using switch statement
+        /*
+        switch(ch)
+        {
+            case 'a':
+                System.out.println("Vowel\n");
+                break;
+            case 'e':
+                System.out.println("Vowel\n");
+                break;
+            case 'i':
+                System.out.println("Vowel\n");
+                break;
+            case 'o':
+                System.out.println("Vowel\n");
+                break;
+            case 'u':
+                System.out.println("Vowel\n");
+                break;
+            default:
+                System.out.println("Consonant");
+        }
+        */
+     } 
+      
+}
+        
+```
+
+### String,Integer & Double Input 
+
+```java
+        Scanner input=new Scanner(System.in);
+        
+        //=======Integer input====/
+        int number;
+        System.out.print("Enter any number: ");
+        number=input.nextInt();
+        System.out.println("Number = "+number);
+        input.nextLine();
+        
+        //=======String input====/
+        String name;
+        System.out.print("Enter your name: ");
+        name =input.nextLine();        
+        System.out.println("Welcome: "+name);
+        
+        //=======double input====/
+        double num1;
+        num1=input.nextDouble();
+        System.out.println("Here is the double value: "+num1);
+
+```
+
+</details>
+
+
+
 <details><summary><b>Basic ArrayList Code</b></summary>
 
 ArrayList Initialization & iteration
 
-```bash
+```java
   import java.util.ArrayList;
   public class arraydemo {
     public static void main(String[] args) {
@@ -40,7 +153,7 @@ ArrayList Initialization & iteration
 
 <details><summary><b>Scene switching code</b></summary>
 
-```
+```java
 
 Parent scene2Parent = FXMLLoader.load(getClass().getResource("Scene1.fxml"));//here switching scene fxml should be attached
 Scene scene2 = new Scene(scene2Parent);
@@ -54,7 +167,7 @@ stg2.show();
 
 <details><summary><b>Stage switching code</b></summary>
 
-```
+```java
 
 Parent fileChooserViewParent = FXMLLoader.load(getClass().getResource("window1.fxml"));//here switching stage fxml should be attached
 Scene fileChooserViewScene = new Scene(fileChooserViewParent);
@@ -68,7 +181,7 @@ newWindow.show();
 
 <details><summary><b>File Reading & Writing</b></summary>
  
-```
+```java
 @FXML
 private void createFileBtnOnClick(ActionEvent event) {
         if(!isTextFileChkBox.isSelected() && !isBinFileChkBox.isSelected())
